@@ -3,6 +3,24 @@ ember-wildcard
 
 [Short description of the addon.]
 
+```js
+// app/routes/index.js
+
+export default Ember.Object.extend({
+  compare: Ember.inject.service(),
+
+  afterModel: function(model) {
+  
+    let url = model.url;
+    let expected = 'https://www.google.com/search?client=safari&rls=en&q=**********&ie=UTF-8&oe=UTF-8';
+    
+    if (this.get('compare').wildcard(url, expected) {
+      // strings match
+    }
+  }
+});
+```
+
 Installation
 ------------------------------------------------------------------------------
 
