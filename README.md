@@ -11,6 +11,8 @@ export default Ember.Object.extend({
 
   afterModel: function(model) {
   
+    this.get('compare').setSymbol('*');
+  
     let url = model.url;
     let expected = 'https://www.google.com/search?client=safari&rls=en&q=**********&ie=UTF-8&oe=UTF-8';
     
