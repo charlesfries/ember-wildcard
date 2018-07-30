@@ -1,8 +1,6 @@
 ember-wildcard
 ==============================================================================
 
-[Short description of the addon.]
-
 ```js
 // app/routes/index.js
 
