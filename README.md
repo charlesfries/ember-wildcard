@@ -2,6 +2,10 @@ ember-wildcard
 ==============================================================================
 
 ```js
+let isMatch = this.get('compare').wildcard('ID #9237720978', 'ID #**********'); // true
+```
+
+```js
 // app/routes/index.js
 
 export default Ember.Object.extend({
