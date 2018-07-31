@@ -5,17 +5,15 @@ export default Service.extend({
 
   init() {
     this._super(...arguments);
-
     this.set('symbol', '*');
   },
 
   setSymbol(symbol) {
     if (typeof symbol !== 'string') return;
-
     this.set('symbol', symbol);
   },
 
-  wildcard(actual, expect) {
+  match(actual, expect) {
     if (actual.length !== expect.length) return false;
     let a = '';
     let e = '';
