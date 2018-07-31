@@ -9,17 +9,17 @@ let isMatch = this.get('compare').wildcard('ID #9237720978', 'ID #**********'); 
 // app/routes/index.js
 
 export default Ember.Object.extend({
-  compare: Ember.inject.service(),
+  wildcard: Ember.inject.service(),
 
   afterModel: function(model) {
-  
-    this.get('compare').setSymbol('*');
-  
+
+    this.get('wildcard').setSymbol('*');
+
     let url = model.url;
     let expected = 'https://www.google.com/search?client=safari&rls=en&q=**********&ie=UTF-8&oe=UTF-8';
-    
-    if (this.get('compare').wildcard(url, expected) {
-      // strings match
+
+    if (this.get('wildcard').match(url, expected)) {
+      // strings are equal
     }
   }
 });
