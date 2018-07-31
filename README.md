@@ -36,7 +36,7 @@ ember install ember-wildcard
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+ember-wildcard is an addon for comparing strings that contains arbitrary data, such at IDs or timestamps. This addon is especially useful when writing tests and comparing expected and actual output.
 
 
 Contributing
@@ -44,7 +44,7 @@ Contributing
 
 ### Installation
 
-* `git clone <repository-url>`
+* `git clone https://github.com/charlesfries/ember-wildcard`
 * `cd ember-wildcard`
 * `npm install`
 
